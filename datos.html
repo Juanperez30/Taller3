@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>datos</title>
+  </head>
+  <body>
+    <h1>Rellena tu CV</h1>
+    <label>Nombre </label>
+    <div>
+    <input type="text" style="width : 200px">
+    </div>
+    <br>
+
+    <label>Apellidos </label>
+    <div>
+    <input type="text" style="width : 250px" >
+    </div>
+    <br>
+
+    <label>Contraseña </label>
+    <div>
+    <input type="password">
+    </div>
+    <br>
+
+    <label>Confirme su contraseña </label>
+    <div>
+    <input type="password">
+    </div>
+    <br>
+
+    <label>Identificación </label>
+    <div>
+    <select>
+    <option selected>Opción</option>
+      <option>TI</option>
+      <option>CC</option>
+      <option>CE</option>
+      <option>PA</option>
+    </select> <input type="text" placeholder="Digíte el número" style="width : 100px">
+    </div>
+    <br>
+
+    <label>Sexo </label>
+    <div>
+    <input type="radio" name="radAnswer" />
+    <label>Masculino</label>
+    <div>
+    </div>
+    <input type="radio" name="radAnswer" />
+    <label>Femenino</label>
+    </div>
+    <br>
+
+    <label>Incluir mi foto </label>
+    <form>
+    <div>
+    <input type="file" accept="image/png, image/jpeg">
+    </div>
+    </form>
+
+    <div>
+    <input type="checkbox">
+    <label>Estudiante...</label>
+    </div>
+    <br>
+    <br>
+
+    <table width="300" cellpadding="5" bgcolor="#888888">
+       <td bgcolor="#E8E8E8">
+    <font size=3.5>Datos personales</font>
+       </td>
+    <tr>
+        <td bgcolor="#FFFFFF">
+       <font size=3.5>
+         <label>Departamento</label>
+         <div>
+         <select>
+         <option selected>-Selecciona-</option>
+           <option>Amazonas</option>
+           <option>Antioquia</option>
+           <option>Arauca</option>
+           <option>Atlántico</option>
+           <option>Bogotá</option>
+           <option>Bolívar</option>
+           <option>Boyacá</option>
+           <option>Caldas</option>
+           <option>Caquetá</option>
+           <option>Casanare</option>
+           <option>Cauca</option>
+           <option>Cesar</option>
+           <option>Chocó</option>
+           <option>Córdoba</option>
+           <option>Cundinamarca</option>
+           <option>Guainía</option>
+           <option>Guaviare</option>
+           <option>Huila</option>
+           <option>La Guajira</option>
+           <option>Magdalena</option>
+           <option>Meta</option>
+           <option>Nariño</option>
+           <option>Norte de Santander</option>
+           <option>Putumayo</option>
+           <option>Quindío</option>
+           <option>Risaralda</option>
+           <option>San Andrés y Providencia</option>
+           <option>Santander</option>
+           <option>Sucre</option>
+           <option>Tolima</option>
+           <option>Valle del Cauca</option>
+           <option>Vaupés</option>
+           <option>Vichada</option>
+         </select>
+        </div>
+        <br>
+
+         <label>Fecha de nacimiento </label>
+         <div>
+         <input type="text" placeholder="Día" style="width : 50px"> de
+         <select>
+         <option selected>Enero</option>
+           <option>Febrero</option>
+           <option>Marzo</option>
+           <option>Abril</option>
+           <option>Mayo</option>
+           <option>Junio</option>
+           <option>Julio</option>
+           <option>Agosto</option>
+           <option>Septiembre</option>
+           <option>Octubre</option>
+           <option>Noviembre</option>
+           <option>Diciembre</option>
+         </select> de <input type="text" placeholder="Año" style="width : 50px">
+         </div>
+         <br>
+
+         <label>Temas de interés</label>
+         <div>
+           <select multiple>
+             <option>Administración de Bases de Datos</option>
+             <option>Análisis y Progrmación</option>
+             <option>Arquitectura</option>
+             <option>Calidad</option>
+             <option>ERP, CRM, Business Intelligence</option>
+           </select>
+         </div>
+         <br>
+
+        </font>
+       </td>
+    </tr>
+    </table>
+
+    <form action="menu.html">
+    <input type="submit" value="Guardar Cambios">
+    </form>
+    <form action="datos.html">
+    <input type="reset" value="Borrar datos introducidos"/>
+    </form>
+
+  </body>
+</html>

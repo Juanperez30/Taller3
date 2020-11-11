@@ -6,45 +6,46 @@
   </head>
   <body>
     <h1>Rellena tu CV</h1>
+    <form action="menu.html" method="post">
     <label>Nombre </label>
     <div>
-    <input type="text" style="width : 200px">
+    <input type="text" style="width : 200px" required>
     </div>
     <br>
 
     <label>Apellidos </label>
     <div>
-    <input type="text" style="width : 250px" >
+    <input type="text" style="width : 250px" required>
     </div>
     <br>
 
     <label>Contraseña </label>
     <div>
-    <input type="password">
+    <input type="password" required>
     </div>
     <br>
 
     <label>Confirme su contraseña </label>
     <div>
-    <input type="password">
+    <input type="password" required>
     </div>
     <br>
 
     <label>Identificación </label>
     <div>
-    <select>
+    <select required>
     <option selected>Opción</option>
       <option>TI</option>
       <option>CC</option>
       <option>CE</option>
       <option>PA</option>
-    </select> <input type="text" placeholder="Digíte el número" style="width : 100px">
+    </select> <input type="text" placeholder="Digíte el número" style="width : 100px" required>
     </div>
     <br>
 
     <label>Sexo </label>
     <div>
-    <input type="radio" name="radAnswer" />
+    <input type="radio" name="radAnswer" required/>
     <label>Masculino</label>
     <div>
     </div>
@@ -54,14 +55,12 @@
     <br>
 
     <label>Incluir mi foto </label>
-    <form>
     <div>
-    <input type="file" accept="image/png, image/jpeg">
+    <input type="file" accept="image/png, image/jpeg" required>
     </div>
-    </form>
 
     <div>
-    <input type="checkbox">
+    <input type="checkbox" required>
     <label>Estudiante...</label>
     </div>
     <br>
@@ -76,7 +75,7 @@
        <font size=3.5>
          <label>Departamento</label>
          <div>
-         <select>
+         <select required>
          <option selected>-Selecciona-</option>
            <option>Amazonas</option>
            <option>Antioquia</option>
@@ -117,7 +116,7 @@
 
          <label>Fecha de nacimiento </label>
          <div>
-         <input type="text" placeholder="Día" style="width : 50px"> de
+         <input type="text" placeholder="Día" style="width : 50px" required> de
          <select>
          <option selected>Enero</option>
            <option>Febrero</option>
@@ -131,7 +130,7 @@
            <option>Octubre</option>
            <option>Noviembre</option>
            <option>Diciembre</option>
-         </select> de <input type="text" placeholder="Año" style="width : 50px">
+         </select> de <input type="text" placeholder="Año" style="width : 50px" required>
          </div>
          <br>
 
@@ -139,10 +138,15 @@
          <div>
            <select multiple>
              <option>Administración de Bases de Datos</option>
-             <option>Análisis y Progrmación</option>
+             <option>Análisis y Programación</option>
              <option>Arquitectura</option>
              <option>Calidad</option>
+             <option>Ciencia de los Datos</option>
              <option>ERP, CRM, Business Intelligence</option>
+             <option>Dirección de Proyectos</option>
+             <option>Investigación</option>
+             <option>Ingeniería de Software</option>
+             <option>Seguridad Informática</option>
            </select>
          </div>
          <br>
@@ -152,12 +156,10 @@
     </tr>
     </table>
 
-    <form action="menu.html">
     <input type="submit" value="Guardar Cambios">
-    </form>
-    <form action="datos.html">
-    <input type="reset" value="Borrar datos introducidos"/>
-    </form>
+
+    <form action="datos.html" method="post">
+    <input type="reset" value="Reset" /> </form>
 
   </body>
 </html>
